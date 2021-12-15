@@ -4,3 +4,6 @@
 .info-dark{
     background-color: #3A4256;
 }
+.info-container {
+    height: 120px;
+}
