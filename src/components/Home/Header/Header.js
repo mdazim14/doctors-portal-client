@@ -2,6 +2,7 @@ import React from 'react';
 import BusinessInfo from '../BusinessInfo/BusinessInfo';
 import HeaderMain from '../HeaderMain/HeaderMain';
 import Navber from '../Navber/Navber';
+// import Services from '../Services/Services';
 import './Header.css';
 const Header = () => {
     return (
@@ -9,6 +10,7 @@ const Header = () => {
             <Navber></Navber>
             <HeaderMain></HeaderMain>
             <BusinessInfo></BusinessInfo>
+            {/* <Services></Services> */}
         </div>
     );
 };
