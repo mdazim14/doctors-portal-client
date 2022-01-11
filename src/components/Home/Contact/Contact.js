@@ -18,10 +18,8 @@ const Contact = () => {
         alert("Massage successfully sended. Thank you");
     }
 
-
-
     return (
-        <section>
+        <section className="container">
 
             {/* <div className="bg-info mb-5 pt-5 text-center d-flex flex-column border">
                 <h5 >Contact</h5>
@@ -33,15 +31,14 @@ const Contact = () => {
             </div> */}
             <div>
 
-                <form className=" mb-5 pt-5 pb-5 d-flex bg-info flex-column text-center" onSubmit={handleSubmit(onSubmit)}>
+                <form className="pt-5 pb-5 d-flex bg-info flex-column text-center" onSubmit={handleSubmit(onSubmit)}>
                     <h5 >Contact</h5>
                     <h2 className="mb-5">Always connect with us</h2>
                     <input className="m-auto w-50 p-1" placeholder="Email Address*" {...register("text1")} />
                     <input className="m-auto mt-2 w-50 p-1" placeholder="Subject*" {...register("text2")} />
                     <textarea className="m-auto mt-2 w-50 p-1" placeholder="Massage*" {...register("text3")}/>
-                    <input className="m-auto mt-2 bg-primary text-white" type="submit" />
+                    <input className="m-auto mt-5 bg-primary text-white" type="submit" />
                 </form>
-
 
             </div>
 
